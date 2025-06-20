@@ -43,10 +43,19 @@ public class Main {
 
     }
 
+    public static boolean checkIntSum(int a, int b) {
+        int sum = a + b;
+        if (sum >= 10 & sum <= 20){
+            return true;
+        }
+        return false;
+    }
+
     public static void main(String[] args) {
         printThreeWords();
         checkSumSign();
         printColor();
         compareNumbers();
+        System.out.println(checkIntSum(16, 4));
     }
 }
