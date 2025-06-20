@@ -50,6 +50,7 @@ public class Main {
         }
         return false;
     }
+
     public static void checkIntSign(int a){
         if (a >= 0){
             System.out.println("Число положительное");
@@ -58,6 +59,14 @@ public class Main {
         }
     }
 
+    public static boolean checkIntSignSecond(int a) {
+        if (a >= 0){
+            return false;
+        }
+        return true;
+    }
+
+
     public static void main(String[] args) {
         printThreeWords();
         checkSumSign();
@@ -65,5 +74,6 @@ public class Main {
         compareNumbers();
         System.out.println(checkIntSum(16, 4));
         checkIntSign(0);
+        System.out.println(checkIntSignSecond(0));
     }
 }
