@@ -6,6 +6,7 @@ public class Main {
         System.out.println("Banana");
         System.out.println("Apple");
     }
+
     public static void checkSumSign() {
         int a = -4;
         int b = 3;
@@ -18,8 +19,21 @@ public class Main {
         }
     }
 
+    public static void printColor() {
+        int value = 100;
+
+        if (value > 0 & value < 101) {
+            System.out.println("Желтый");
+        } else if (value > 100) {
+            System.out.println("Зеленый");
+        } else {
+            System.out.println("Красный");
+        }
+    }
+
     public static void main(String[] args) {
         printThreeWords();
         checkSumSign();
+        printColor();
     }
 }
