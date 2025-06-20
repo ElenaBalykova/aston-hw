@@ -74,6 +74,15 @@ public class Main {
         }
     }
 
+    public static boolean checkLeapYear(int year){
+        if (year % 100 == 0 && year % 400 != 0){
+            return false;
+        } else if(year % 4 == 0) {
+            return true;
+        }
+        return false;
+    }
+
 
     public static void main(String[] args) {
         printThreeWords();
@@ -84,5 +93,6 @@ public class Main {
         checkIntSign(0);
         System.out.println(checkIntSignSecond(0));
         stringRepeat("Some string", 1);
+        System.out.println(checkLeapYear(2400));
     }
 }
