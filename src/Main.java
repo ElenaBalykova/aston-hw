@@ -87,6 +87,7 @@ public class Main {
 
     public static void intArray() {
         int[] arr = {1, 1, 0, 0, 1, 0, 1, 1, 0, 0};
+
         for (int count = 0; count < arr.length; count++){
             if(arr[count] == 0) {
                 arr[count] = 1;
@@ -100,12 +101,23 @@ public class Main {
 
     public static void intArraySecond(){
         int[] arr = new int[100];
+
         for(int count = 0; count < arr.length; count++) {
             arr[count] = count+1;
         }
         System.out.println(Arrays.toString(arr));
     }
 
+    public static void arrayItration() {
+       int[] arr = { 1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
+
+        for(int count = 0; count < arr.length; count++) {
+            if(arr[count] < 6) {
+                arr[count] *= 2;
+            }
+        }
+        System.out.println(Arrays.toString(arr));
+    }
 
     public static void main(String[] args) {
         printThreeWords();
@@ -119,5 +131,6 @@ public class Main {
         System.out.println(checkLeapYear(2400));
         intArray();
         intArraySecond();
+        arrayItration();
     }
 }
