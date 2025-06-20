@@ -98,6 +98,15 @@ public class Main {
         System.out.println(Arrays.toString(arr));
     }
 
+    public static void intArraySecond(){
+        int[] arr = new int[100];
+        for(int count = 0; count < arr.length; count++) {
+            arr[count] = count+1;
+        }
+        System.out.println(Arrays.toString(arr));
+    }
+
+
     public static void main(String[] args) {
         printThreeWords();
         checkSumSign();
@@ -109,5 +118,6 @@ public class Main {
         stringRepeat("Some string", 1);
         System.out.println(checkLeapYear(2400));
         intArray();
+        intArraySecond();
     }
 }
