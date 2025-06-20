@@ -66,6 +66,14 @@ public class Main {
         return true;
     }
 
+    public static void stringRepeat(String str, int a ){
+        int count = 0;
+        while (count < a) {
+            System.out.println(str);
+            count++;
+        }
+    }
+
 
     public static void main(String[] args) {
         printThreeWords();
@@ -75,5 +83,6 @@ public class Main {
         System.out.println(checkIntSum(16, 4));
         checkIntSign(0);
         System.out.println(checkIntSignSecond(0));
+        stringRepeat("Some string", 1);
     }
 }
