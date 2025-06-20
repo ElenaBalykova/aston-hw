@@ -1,4 +1,6 @@
+import java.sql.Array;
 import java.sql.SQLOutput;
+import java.util.Arrays;
 
 public class Main {
     public static void printThreeWords() {
@@ -83,6 +85,18 @@ public class Main {
         return false;
     }
 
+    public static void intArray() {
+        int[] arr = {1, 1, 0, 0, 1, 0, 1, 1, 0, 0};
+        for (int count = 0; count < arr.length; count++){
+            if(arr[count] == 0) {
+                arr[count] = 1;
+            } else {
+                arr[count] = 0;
+            }
+        }
+
+        System.out.println(Arrays.toString(arr));
+    }
 
     public static void main(String[] args) {
         printThreeWords();
@@ -94,5 +108,6 @@ public class Main {
         System.out.println(checkIntSignSecond(0));
         stringRepeat("Some string", 1);
         System.out.println(checkLeapYear(2400));
+        intArray();
     }
 }
