@@ -131,6 +131,12 @@ public class Main {
         System.out.println(Arrays.toString(arr[3]));
     }
 
+    public static int[] array(int len, int initialValue) {
+        int[] arr = new int[len];
+        Arrays.fill(arr, initialValue);
+        return arr;
+    }
+
     public static void main(String[] args) {
         printThreeWords();
         checkSumSign();
@@ -145,5 +151,6 @@ public class Main {
         intArraySecond();
         arrayItration();
         squareArrayItration();
+        System.out.println(Arrays.toString(array(5, 7)));
     }
 }
