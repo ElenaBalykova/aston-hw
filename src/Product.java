@@ -37,4 +37,5 @@ public class Product {
         productsArray[3] = new Product("Nokia n73", "02.01.2025", "Nokia", "Finland", 2599, false);
         productsArray[4] = new Product("Iphone 13 mini", "12.02.2025", "Apple", "USA", 55599, true);
     }
+
 }
